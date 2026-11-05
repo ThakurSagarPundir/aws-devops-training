@@ -1,4 +1,4 @@
-#!/bin/bash
+Testing automatic Jenkins build#!/bin/bash
 
 echo "Hello Sagar!"
 echo "My first GitHub and Jenkins integration"
