@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "RQ+qc7uRaJU=",
+  "success": true,
+  "projectFilePath": "/home/pu/devops-training/day5/DevOpsApi/DevOpsApi.csproj",
+  "expectedPackageFiles": [
+    "/home/pu/.nuget/packages/microsoft.aspnetcore.openapi/10.0.14/microsoft.aspnetcore.openapi.10.0.14.nupkg.sha512",
+    "/home/pu/.nuget/packages/microsoft.openapi/2.12.2/microsoft.openapi.2.12.2.nupkg.sha512"
+  ],
+  "logs": []
+}
