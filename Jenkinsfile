@@ -1,3 +1,4 @@
+
 pipeline {
     agent any
 
@@ -24,6 +25,19 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'dotnet test DevOpsApi/DevOpsApi.csproj --configuration Release --no-build'
+            }
+        }
+
+        stage('Publish') {
+            steps {
+                sh 'dotnet publish DevOpsApi/DevOpsApi.csproj --configuration Release --no-build --output publish'
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                sh 'cp -r publish/. /opt/devopsapi/'
+                sh 'sudo /usr/bin/systemctl restart devopsapi'
             }
         }
     }
