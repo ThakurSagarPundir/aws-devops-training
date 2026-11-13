@@ -24,7 +24,7 @@ pipeline {
 
         stage('Test') {
             steps {
-                sh 'dotnet test DevOpsApi/DevOpsApi.csproj --configuration Release --no-build'
+                sh 'dotnet test DevOpsApi.Tests/DevOpsApi.Tests.csproj --configuration Release'
             }
         }
 
